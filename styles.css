@@ -23,6 +23,16 @@ p {
   margin: 0;
 }
 
+.founders-img {
+  width: 500px;
+  height: auto;
+}
+
+.amped-paws-logo {
+  width: 50px;
+  height: auto;
+}
+
 /* .header { */
 /*   height: 60vh; */
 /*   background-color: #584738; */
