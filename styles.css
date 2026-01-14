@@ -33,7 +33,7 @@ ul {
 }
 
 a {
-  color: black;
+  color: #ffefca;
   text-decoration: none;
 }
 
@@ -42,7 +42,22 @@ a {
   background-color: #020b1a;
   border-bottom: 4mm ridge rgb(109 77 54 / 0.6);
   color: #faf4e1;
-  padding: 1em;
+  padding: 1em 10%;
+}
+
+.header-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-ul-class {
+  display: flex;
+  gap: 1.5em;
+}
+
+.header-ul-class a {
+  font-size: 1.3em;
 }
 
 .founders-img {
@@ -51,6 +66,6 @@ a {
 }
 
 .amped-paws-logo {
-  width: 50px;
+  width: 100px;
   height: auto;
 }
