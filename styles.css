@@ -5,6 +5,7 @@ background colors
 #efd394
 #ffefca
 #6d4d36
+#dff1ff
 
 text colors
 #020b1a
@@ -14,11 +15,6 @@ text colors
 * {
   box-sizing: border-box;
   font-family: "Times New Roman", Arial, Helvetica, sans-serif;
-}
-
-li {
-  min-width: 130px;
-  text-align: center;
 }
 
 body {
@@ -36,12 +32,18 @@ p {
 
 h1 {
   font-size: 3em;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+}
+
+li {
+  min-width: 130px;
+  text-align: center;
 }
 
 a {
@@ -91,6 +93,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  gap: 2em;
 }
 
 .header-content-left h1 {
@@ -99,6 +102,19 @@ a {
 
 .header-content-left div {
   flex: 1;
+  min-width: 325px;
+}
+
+.header-content-left button {
+  width: 200px;
+  padding: 10px;
+  height: auto;
+  background-color: #dff1ff;
+  border-radius: 15px;
+  color: #020b1a;
+  font-weight: bold;
+  font-size: 1.1em;
+  align-self: center;
 }
 
 .header-content-right {
