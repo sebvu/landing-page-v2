@@ -28,8 +28,9 @@ body {
 
 p {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5em;
+  font-weight: 400;
 }
 
 h1 {
@@ -37,9 +38,10 @@ h1 {
   margin: 0;
 }
 
-h2, h3 {
-
+h2,
+h3 {
   text-shadow: -1px 1px 1px black;
+  margin: 0;
 }
 
 h2 {
@@ -97,10 +99,16 @@ a {
   flex-wrap: wrap;
 }
 
-.header-flex {
+.h2-flex,
+.h3-flex {
   display: flex;
   align-items: center;
+  margin: 8em 0 2em 0;
   gap: 1em;
+}
+
+.h3-flex {
+  margin: 4em 0 1em 0;
 }
 
 /* header styling */
@@ -186,6 +194,15 @@ a {
 .content-container {
   display: flex;
   flex-direction: column;
+}
+
+/* our mission styling */
+
+.our-mission-p {
+  text-indent: 1em;
+  font-weight: 600;
+  font-size: 1.5em;
+  max-width: 75%;
 }
 
 /* about us styling */
