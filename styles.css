@@ -319,24 +319,10 @@ blockquote p:after {
 
 div.outer-scroll-container {
   width: 100%;
+  background: #dff1ff;
   box-shadow: -8px 8px 8px black;
   border-radius: 3%;
   padding: 40px;
-
-  /* https://projects.verou.me/css3patterns/#wave
-   *
-   * this was created by Paul Salentiny and edited by me
-   */
-
-
-  background:
-    linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0,
-    radial-gradient(circle closest-side, #ffffff 53%, rgba(255, 255, 255, 0) 0)
-      0 0,
-    radial-gradient(circle closest-side, #ffffff 50%, rgba(255, 255, 255, 0) 0)
-      55px 0 #dff1ff;
-  background-size: 110px 200px;
-  background-repeat: repeat-x;
 }
 
 div.scroll-container {
