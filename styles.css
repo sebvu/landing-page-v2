@@ -45,6 +45,7 @@ h2 {
   align-items: center;
   justify-content: center;
   max-width: 350px;
+  text-shadow: -1px 1px 1px black;
 }
 
 h2 span {
@@ -56,6 +57,7 @@ h2:before {
   height: 5px;
   flex: 1;
   content: "";
+  box-shadow: -3px 3px 3px black;
 }
 
 ul {
