@@ -319,13 +319,27 @@ blockquote p:after {
 
 div.outer-scroll-container {
   width: 100%;
-  background-color: #020b1a;
+  box-shadow: -8px 8px 8px black;
   border-radius: 3%;
   padding: 40px;
+
+  /* https://projects.verou.me/css3patterns/#wave
+   *
+   * this was created by Paul Salentiny and edited by me
+   */
+
+
+  background:
+    linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0,
+    radial-gradient(circle closest-side, #ffffff 53%, rgba(255, 255, 255, 0) 0)
+      0 0,
+    radial-gradient(circle closest-side, #ffffff 50%, rgba(255, 255, 255, 0) 0)
+      55px 0 #dff1ff;
+  background-size: 110px 200px;
+  background-repeat: repeat-x;
 }
 
 div.scroll-container {
-  background-color: #020b1a;
   overflow: auto;
   flex: 1;
   display: flex;
@@ -335,6 +349,7 @@ div.scroll-container {
 div.scroll-container img {
   border-radius: 5%;
   height: 500px;
+  border: 5px solid #020b1a;
 }
 
 /* footer styling */
@@ -343,21 +358,9 @@ div.scroll-container img {
   height: 15vh;
   color: #ffefca;
   background-color: #020b1a;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-container div {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-container img {
-  flex: initial;
   width: 80px;
   height: auto;
 }
