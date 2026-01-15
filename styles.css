@@ -107,7 +107,7 @@ a {
 .h3-flex {
   display: flex;
   align-items: center;
-  margin: 8em 0 2em 0;
+  margin: 8em 0 6em 0;
   gap: 1em;
 }
 
@@ -239,12 +239,83 @@ a {
 
 /* testimonies styling */
 
-.testimonies-container {
+.testimony-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8em;
+}
+
+.testimony-images-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1em;
+}
+
+.testimony-circle {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: #dff1ff;
+  border: 10px solid #ffefca;
+  overflow: hidden;
+}
+
+.testimony-box {
+  min-height: 400px;
+  width: 500px;
+  background-color: #dff1ff;
+  border-radius: 3%;
+  box-shadow: 2px 2px 1em black;
+
+  position: relative;
+}
+
+.testimony-text {
   flex: 1;
+  padding: 3em;
+  padding-top: 6em;
+}
+
+.testimony-text p {
+  overflow-wrap: anywhere;
+  line-height: 2.4em;
+  font-size: 1.2em;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p:before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #009f82;
+}
+
+blockquote p:after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #009f82;
+}
+
+.testimony-text cite {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.testimony-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* footer styling */
 
 .footer-container {
-
 }
