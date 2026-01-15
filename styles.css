@@ -37,26 +37,32 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  font-size: 2.5em;
-  margin-top: 3em;
+h2, h3 {
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 350px;
   text-shadow: -1px 1px 1px black;
 }
 
-h2 span {
-  margin: 0 15px;
+h2 {
+  font-size: 2.2em;
 }
 
-h2:before {
+h3 {
+  font-size: 1.8em;
+}
+
+span.h2-line {
   background: #6d4d36;
+  display: inline-block;
   height: 5px;
-  flex: 1;
-  content: "";
+  width: 180px;
+  box-shadow: -3px 3px 3px black;
+}
+
+span.h3-line {
+  background: #009f82;
+  display: inline-block;
+  height: 5px;
+  width: 120px;
   box-shadow: -3px 3px 3px black;
 }
 
@@ -89,6 +95,12 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 /* header styling */
