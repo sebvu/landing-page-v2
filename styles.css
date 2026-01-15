@@ -12,6 +12,8 @@ text colors
 #ffefca
 */
 
+/* type selectors styling */
+
 * {
   box-sizing: border-box;
   font-family: "Times New Roman", Arial, Helvetica, sans-serif;
@@ -50,6 +52,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* grouped styling */
+
+.header-container,
+.footer-container,
+.content-container {
+  padding: 1em 10%;
+}
+
+.about-us-container,
+.testimonies-container,
+.sponsors-container {
+  height: 500px;
+}
+
+/* header styling */
 
 .header-container {
   min-height: 60vh;
@@ -129,14 +147,8 @@ a {
   flex-direction: column;
 }
 
-.header-container,
-.footer-container,
-.content-container {
-  padding: 1em 10%;
-}
-
 .founders-img {
-  width: 500px;
+  width: 600px;
   height: auto;
 }
 
@@ -145,20 +157,21 @@ a {
   height: auto;
 }
 
+/* about us styling */
+
 .about-us-container {
   flex: 1;
 }
+
+/* testimonies styling */
 
 .testimonies-container {
   flex: 1;
 }
 
+/* sponsors styling */
+
 .sponsors-container {
   flex: 1;
 }
 
-.about-us-container,
-.testimonies-container,
-.sponsors-container {
-  height: 500px;
-}
